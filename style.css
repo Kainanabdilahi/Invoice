@@ -1,0 +1,144 @@
+:root {
+  --main-color: #143a68;
+  --back-color: #e2f5e5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container .invoice {
+  width: 600px;
+  height: 900px;
+  padding: 50px;
+  background-color: var(--back-color);
+}
+.container .invoice .header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.container .invoice .header img {
+  width: 350px;
+  margin: 0 auto;
+}
+.container .invoice .title {
+  margin-bottom: 10px;
+}
+.container .invoice .title h1 {
+  color: var(--main-color);
+  font-size: 2.5rem;
+}
+.container .invoice .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+.container .invoice .info h2 {
+  color: var(--main-color);
+  margin-bottom: 25px;
+}
+.container .invoice .info h2 span {
+  color: red;
+}
+
+.cname {
+  width: 300px;
+
+  border-bottom: 2px solid black;
+}
+.cdetiles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--main-color);
+  padding-bottom: 20px;
+}
+.cdetiles h3 {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table,
+th,
+td {
+  border: 2px solid var(--main-color);
+}
+th,
+td {
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color: var(--main-color);
+  color: #ffffff;
+}
+
+.total {
+  display: flex;
+  justify-content: flex-end;
+  border: 2px solid var(--main-color);
+  border-left: transparent;
+  border-bottom: transparent;
+  border-top: transparent;
+  position: relative;
+}
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+}
+.total span {
+  border: 2px solid var(--main-color);
+  font-size: 14px;
+  border-top: transparent;
+  border-right: transparent;
+  border-left: transparent;
+  padding: 11px;
+}
+.total .left .set {
+  border-left: 2px solid var(--main-color);
+  border-right: 2px solid var(--main-color);
+}
+.total .right .unset {
+  color: var(--main-color);
+}
+.total .left .set:not(:last-child){
+    background-color: green;
+    color: white;
+}
+.total .left .set:last-child{
+    background-color: var(--main-color);
+    color: white;
+}
+
+.signature{
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+    
+}
+.signature h3{
+    border-top: 3px solid var(--main-color);
+    width: 220px;
+    padding-top: 10px;
+    font-weight: normal;
+    letter-spacing: 1.5px;
+}
